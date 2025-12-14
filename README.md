@@ -165,7 +165,7 @@ Used ChatGPT to brainstorm:
 - How to integrate JWT filters
 - AI helped me validate architecture and choose better naming conventions.
 
-   5. Documentation & Readability
+5. Documentation & Readability
 Asked ChatGPT to help generate:
 - README.md layout
 - Test report formatting

@@ -1,0 +1,58 @@
+/* Toggle button */
+.menu-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 2000;
+  color: white;
+}
+
+/* Sidebar B Base */
+.sidebarB {
+  width: 230px;
+  background: #1e1e1e;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: -250px;      /* hidden */
+  transition: 0.3s ease;
+  z-index: 1500;
+}
+
+/* Sidebar visible */
+.sidebarB.open {
+  left: 0;
+}
+
+.sidebarB-title {
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.sidebarB-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebarB-menu li {
+  margin: 15px 0;
+}
+
+.sidebarB-menu a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  display: block;
+  border-radius: 6px;
+  background: #2c2c2c;
+  transition: 0.2s ease;
+}
+
+.sidebarB-menu a:hover {
+  background: #444;
+}

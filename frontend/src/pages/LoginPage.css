@@ -1,0 +1,123 @@
+/* ================================
+   Retro Sweet Shop – Animated BG
+================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300;400;600&display=swap');
+
+/* Animated pastel candy background */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(130deg, #ffb6c1, #ffd1a1, #fff7ae, #c4f0c5, #b1e5ff);
+  background-size: 600% 600%;
+  animation: retroBgMove 12s ease infinite;
+}
+
+@keyframes retroBgMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ================================
+   Retro Glass Login Card
+================================= */
+
+.login-box {
+  width: 380px;
+  padding: 35px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(15px);
+
+  box-shadow:
+    0 0 25px rgba(255, 105, 180, 0.25),
+    0 0 35px rgba(255, 182, 193, 0.25);
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  animation: popUp 0.9s ease;
+}
+
+@keyframes popUp {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Retro Title */
+.login-box h2 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 32px;
+  text-align: center;
+  color: #ff4b91;
+  text-shadow: 2px 2px 5px #fff;
+}
+
+/* ================================
+   Inputs
+================================= */
+
+.login-box input {
+  padding: 14px;
+  border-radius: 12px;
+  border: 2px solid #ffacc5;
+
+  background: rgba(255, 255, 255, 0.85);
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s ease;
+}
+
+.login-box input:focus {
+  background: #fff;
+  border-color: #ff5e8e;
+  box-shadow: 0 0 10px rgba(255, 110, 150, 0.7);
+}
+
+/* ================================
+   Button
+================================= */
+
+.login-box button {
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  font-size: 17px;
+
+  background: linear-gradient(90deg, #ff5e8e, #ff80b0);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+
+  transition: 0.25s ease;
+}
+
+.login-box button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(255, 80, 120, 0.4);
+}
+
+/* ================================
+   Register Text
+================================= */
+
+.register-text {
+  text-align: center;
+  font-size: 15px;
+  color: #3f1ce9;
+  font-family: "Poppins", sans-serif;
+}
+
+.register-text a {
+  color: #ff0055;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}

@@ -1,0 +1,14 @@
+com\sweetshop\auth\Role.class
+com\sweetshop\auth\User$UserBuilder.class
+com\sweetshop\auth\User.class
+com\sweetshop\sweet\SweetController.class
+com\sweetshop\auth\RegisterRequest.class
+com\sweetshop\config\CORSConfig.class
+com\sweetshop\sweet\SweetService.class
+com\sweetshop\sweet\SweetRepository.class
+com\sweetshop\sweet\Sweet.class
+com\sweetshop\sweet\Sweet$SweetBuilder.class
+com\sweetshop\config\AppConfig.class
+com\sweetshop\SweetshopApplication.class
+com\sweetshop\config\CORSConfig$1.class
+com\sweetshop\auth\AuthRequest.class

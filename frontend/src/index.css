@@ -1,0 +1,29 @@
+.dashboard {
+  width: 80%;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters input,
+.filters button {
+  padding: 10px;
+}
+
+.sweet-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.sweet-card {
+  padding: 15px;
+  border-radius: 10px;
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+}

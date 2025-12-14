@@ -1,36 +1,33 @@
-# SweetShop
 # Sweet Shop Management System 🍬
 
-A full‑stack web application for managing sweets, categories, users, and orders in a sweet shop.  
-This project includes:
-
-- A **Spring Boot backend** with JWT Authentication  
-- A **React frontend**  
-- Image upload support  
-- Role‑based access control (Admin/User)  
-- PostgreSQL database integration  
+A full‑stack web application for managing sweets, categories, users, orders, and authentication.  
+This system is designed for both **Admin** and **User** roles, enabling sweet uploads, image management, secure login, and more.
 
 ---
 
-## 🚀 Features
+# 🚀 Features
 
-### ✅ Backend (Spring Boot)
-- JWT-based login & registration  
-- Role-based authorization (**USER**, **ROLE_ADMIN**)  
-- Upload sweets with image files (`multipart/form-data`)  
-- Retrieve and manage sweets  
-- Secure REST APIs  
+## ✅ Backend (Spring Boot)
+- JWT Authentication & Authorization  
+- Secure password hashing using BCrypt  
+- Role-based access control (**USER**, **ROLE_ADMIN**)  
+- Add sweets with image upload  
+- Manage users & sweets  
+- PostgreSQL database support  
+- Cross-origin API enabled for frontend access  
 
-### 🎨 Frontend (React)
-- Login/Register forms  
-- Sweet upload form with image picker  
-- Sweet listing dashboard  
-- Admin-only actions  
+## 🎨 Frontend (React)
+- Login & Register pages  
+- Dashboard for viewing sweets  
+- Admin panel (only for ROLE_ADMIN)  
+- Image upload preview  
+- Responsive UI  
 
-### 🛢 Database (PostgreSQL)
+## 🛢 Database (PostgreSQL)
 - User table  
 - Sweets table  
-- Secure hashed passwords (BCrypt)  
+- Orders table (if needed)  
+- Auto schema creation with Hibernate  
 
 ---
 
@@ -42,89 +39,116 @@ This project includes:
 - JDK 17+
 - Maven
 - PostgreSQL 15+
-- VS Code / IntelliJ
+- IntelliJ / VS Code
 
 ### **Steps**
-
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/sweetshop.git
+   ```
 
-2. Open the backend/ folder in your IDE.
+2. Open the **backend/** folder in your IDE.
 
-3. Update application.properties:
-spring.datasource.url=jdbc:postgresql://localhost:5432/sweetshop
-spring.datasource.username=postgres
-spring.datasource.password=your_db_password
-
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-spring.servlet.multipart.enabled=true
+3. Configure **application.properties**:
+   ```properties
+   spring.datasource.url=jdbc:postgresql://localhost:5432/sweetshop
+   spring.datasource.username=postgres
+   spring.datasource.password=your_db_password
+   spring.jpa.hibernate.ddl-auto=update
+   spring.jpa.show-sql=true
+   spring.servlet.multipart.enabled=true
+   ```
 
 4. Run the backend:
-mvn spring-boot:run
+   ```bash
+   mvn spring-boot:run
+   ```
 
-2️⃣ Frontend Setup (React)
-Requirements
-Node.js 18+
+Backend runs at:  
+👉 http://localhost:8080
 
-npm or yarn
+---
 
-Steps
-1. Move to frontend folder:
-cd frontend
+## 2️⃣ Frontend Setup (React)
+
+### **Requirements**
+- Node.js 18+
+- npm or yarn
+
+### **Steps**
+1. Navigate to frontend folder:
+   ```bash
+   cd frontend
+   ```
 
 2. Install dependencies:
-npm install
+   ```bash
+   npm install
+   ```
 
-3. Run:
-npm run dev
+3. Start frontend:
+   ```bash
+   npm run dev
+   ```
 
-Frontend will run at:
-http://localhost:5173
+Frontend runs at:  
+👉 http://localhost:5173
 
-Backend will run at:
-http://localhost:8080
+---
 
-📷 Screenshots
-i will add later.
+# 📷 Screenshots
+(Add your actual screenshots later)
 
-Example layout:
+Suggested folder:
+```
 /screenshots
    ├── login.png
    ├── upload-form.png
    ├── dashboard.png
+```
 
+---
 
-🧪 Test Report
-Your test suite includes:
+# 🧪 Test Report
 
-Test	Status
-User Registration	✔️
-JWT Authentication	✔️
-Sweet Upload + Image	✔️
-Purchase Flow	✔️
-Search Functionality	✔️
-Admin Role Permissions	✔️
-Include actual screenshots/output logs if needed.
+| Test Case | Status |
+|----------|--------|
+| User Registration | ✔️ |
+| JWT Authentication | ✔️ |
+| Sweet Upload with Image | ✔️ |
+| Purchase Flow | ✔️ |
+| Search Functionality | ✔️ |
+| Admin Role Permissions | ✔️ |
 
-🤖 My AI Usage (Mandatory Section)
-This project was created with assistance from ChatGPT for:
+You may attach:
+- Backend logs  
+- Postman test collection  
+- Frontend screenshots  
 
-Debugging Spring Security + JWT issues
+---
 
-Designing REST APIs
+# 🤖 My AI Usage (Mandatory Section)
 
-Writing documentation (README, test report)
+This project was developed with assistance from **ChatGPT** for:
 
-Improving code structure
+- Debugging Spring Security authentication errors  
+- Fixing CORS + multipart issues  
+- Writing API documentation  
+- Improving code logic & folder structure  
+- Creating the README.md  
+- Creating test report explanations  
+- GitHub uploading guidance  
 
-Explaining errors & generating solutions
+**Reflection:**  
+AI significantly improved my debugging speed and understanding of backend security.  
+However, all decisions, implementations, and code integration were done by me manually to ensure full learning and correctness.
 
-All final implementation decisions were made by me.
+---
 
-📬 Contact
-For questions or issues, feel free to reach out.
-chiragchaturvedi197@gmail.com
+# 📬 Contact
 
+For questions or collaboration:  
+📧 **chiragchaturvedi197@gmail.com**
+
+---
 

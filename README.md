@@ -139,12 +139,57 @@ This project was developed with assistance from **ChatGPT** for:
 - Creating test report explanations  
 - GitHub uploading guidance  
 
-**Reflection:**  
-AI significantly improved my debugging speed and understanding of backend security.  
-However, all decisions, implementations, and code integration were done by me manually to ensure full learning and correctness.
-
 ---
 
+📌 How I Used AI Tools (Detailed Explanation)
+I used AI tools in several parts of this project to speed up development and solve issues more efficiently:
+
+1. Debugging & Error Fixing
+- I used ChatGPT to understand Spring Security & JWT errors.
+- Asked for explanations of POST/GET failures, CORS issues, and HttpMediaTypeNotSupportedException.
+- Used AI suggestions to modify controllers, add correct annotations, fix role-based access issues, and enable file uploads properly.
+
+3. Writing and Improving Code
+Asked AI to propose better structure for:
+- Service layer
+- Controller mapping
+- DTO structure
+- Response formatting
+- Used AI recommendations to simplify repetitive logic and clean my code.
+
+4. API Design & Architecture Decisions
+Used ChatGPT to brainstorm:
+- REST API endpoints
+- Role-based access flow
+- How to structure Sweet entity + image upload
+- How to integrate JWT filters
+- AI helped me validate architecture and choose better naming conventions.
+
+   5. Documentation & Readability
+Asked ChatGPT to help generate:
+- README.md layout
+- Test report formatting
+- Clear installation steps
+- Explanation sections
+- This made the documentation more professional and complete.
+
+6. React Frontend Improvements
+- Consulted AI to debug CORS problems between React (5173) and Spring Boot (8080).
+- Got advice on:
+- Handling file inputs
+- Uploading images as multipart
+- Managing auth tokens
+- Creating protected admin routes
+
+7. Reflection on AI Usage
+- AI tools made the project development:
+- Faster, because I didn’t get stuck on errors for long.
+- Clearer, as explanations helped me learn concepts.
+- More structured, thanks to help with API design and documentation.
+  
+ But final coding, debugging, configuration, and implementation was done by me, and I ensured I fully understood every change before applying it.
+
+---
 # 📬 Contact
 
 For questions or collaboration:  
